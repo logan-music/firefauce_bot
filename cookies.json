@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "ffcfa4e7-e154-4cca-ac35-1f297c65f766.ZzwKIU9_PPfYTgToauTFn5mUEHw",
+    "domain": "firefaucet.win",
+    "path": "/",
+    "httpOnly": true,
+    "secure": false
+  },
+  {
+    "name": "bitmedia_fid",
+    "value": "eyJmaWQiOiIzY2Y3N2Y1OGY3YzQ3ZjczYzE2MTVhOWQ1NjVjNzUyZCIsImZpZG5vdWEiOiI0MjNjYjdjYjYzZTdiZWRmMzY2NjRiMmY0YWNjZGE1MyJ9",
+    "domain": "firefaucet.win",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  }
+]

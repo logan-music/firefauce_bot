@@ -1,0 +1,23 @@
+app = "firefaucet-bot"
+primary_region = "lhr"
+
+[env]
+PORT = "8080"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[deploy]
+  command = "node bypass-ptc.js"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
