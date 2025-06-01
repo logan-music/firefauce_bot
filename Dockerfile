@@ -1,6 +1,6 @@
 FROM node:18-slim
 
-# Install dependencies & Chromium
+# Install Chromium dependencies
 RUN apt-get update && apt-get install -y \
     chromium \
     fonts-liberation \
@@ -14,19 +14,19 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set working directory
+# Create app directory
 WORKDIR /app
 
-# Copy files
+# Copy necessary files
 COPY package.json .
 COPY bypass-ptc.js .
 COPY cookies.json .
 
-# Install Node.js packages
+# Install Node packages
 RUN npm install
 
-# Set Puppeteer to use system Chromium
+# Use system-installed Chromium
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
-# Default command
+# Start script
 CMD ["node", "bypass-ptc.js"]
