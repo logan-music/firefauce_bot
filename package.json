@@ -1,13 +1,23 @@
 {
   "name": "firefaucet-bot",
   "version": "1.0.0",
-  "description": "FireFaucet PTC auto bypass bot",
+  "description": "FireFaucet ACP PTC bypass bot using Puppeteer and Tesseract",
   "main": "bypass-ptc.js",
   "scripts": {
     "start": "node bypass-ptc.js"
   },
   "dependencies": {
-    "puppeteer": "^21.3.8",
+    "puppeteer": "^21.11.0",
     "tesseract.js": "^4.1.1"
-  }
+  },
+  "keywords": [
+    "puppeteer",
+    "tesseract",
+    "firefaucet",
+    "bot",
+    "bypass",
+    "ptc"
+  ],
+  "author": "Logan",
+  "license": "MIT"
 }
