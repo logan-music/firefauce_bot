@@ -1,13 +1,30 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-extra");
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const fs = require("fs");
 const Tesseract = require("tesseract.js");
+const http = require("http"); // DUMMY PORT HERE ✅
 
 const COOKIES = require("./cookies.json");
 const PTC_PAGE = "https://firefaucet.win/ptc/";
 
+puppeteer.use(StealthPlugin());
+
 (async () => {
+  // Dummy port listener to satisfy Render's requirement
+  const PORT = process.env.PORT || 3000;
+  http.createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("FireFaucet Bot is running!\n");
+  }).listen(PORT, () => {
+    console.log(`🌐 Dummy server listening on port ${PORT}`);
+  });
+
   console.log("🚀 Launching browser...");
-  const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
+
   const page = await browser.newPage();
 
   console.log("🍪 Setting cookies...");
@@ -24,7 +41,7 @@ const PTC_PAGE = "https://firefaucet.win/ptc/";
 
     if (adLinks.length === 0) {
       console.log("🎉 No more PTC ads. Waiting before retry...");
-      await page.waitForTimeout(60000); // Subiri dakika 1 kabla ya kurudia
+      await page.waitForTimeout(60000);
       await page.reload({ waitUntil: "domcontentloaded" });
       continue;
     }
@@ -55,12 +72,11 @@ const PTC_PAGE = "https://firefaucet.win/ptc/";
           const digits = ocrResult.data.text.replace(/\D/g, "");
           console.log(`🔢 Digits recognized: ${digits}`);
 
-          await frame.type("input.form-control", digits, { delay: 100 });
+          await frame.type("input.form-control", digits, { delay: 100 + Math.floor(Math.random() * 100) });
           await frame.click("button.btn.btn-primary");
 
-          await newTab.waitForTimeout(5000);
+          await newTab.waitForTimeout(3000 + Math.floor(Math.random() * 3000));
           console.log("✅ Captcha solved and ad completed.");
-
         } else {
           console.log("⚠️ Iframe haijapatikana, skipping...");
         }
@@ -71,10 +87,10 @@ const PTC_PAGE = "https://firefaucet.win/ptc/";
         await newTab.close();
       }
 
-      await page.waitForTimeout(4000); // Subiri kabla ya kuendelea
+      await page.waitForTimeout(4000 + Math.floor(Math.random() * 2000));
     }
   }
 
-  // Haifiki hapa kamwe sababu ya loop, lakini ifike basi:
+  // Kawaida hatufiki hapa kwa sababu ya loop
   await browser.close();
 })();
