@@ -1,16 +1,64 @@
 [
   {
-    "name": "session",
-    "value": "ffcfa4e7-e154-4cca-ac35-1f297c65f766.ZzwKIU9_PPfYTgToauTFn5mUEHw",
     "domain": "firefaucet.win",
+    "name": "session",
+    "value": "01b7ff54-d81d-4f4e-95e5-c2e5ea3264d6.mmmwPbDuHhe74bRZ2FDcSFjfKyY",
     "path": "/",
     "httpOnly": true,
     "secure": false
   },
   {
-    "name": "bitmedia_fid",
-    "value": "eyJmaWQiOiIzY2Y3N2Y1OGY3YzQ3ZjczYzE2MTVhOWQ1NjVjNzUyZCIsImZpZG5vdWEiOiI0MjNjYjdjYjYzZTdiZWRmMzY2NjRiMmY0YWNjZGE1MyJ9",
+    "domain": ".firefaucet.win",
+    "name": "_gid",
+    "value": "GA1.2.446633399.1748875904",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_gat_gtag_UA_113361696_1",
+    "value": "1",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_ga_62J3KC448K",
+    "value": "GS2.1.s1748875811$o3$g1$t1748875904$j29$l0$h0",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_ga",
+    "value": "GA1.1.348722677.1748875904",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
     "domain": "firefaucet.win",
+    "name": "bitmedia_fid",
+    "value": "eyJmaWQiOiJkODA0YzM5NWI0YTViYmY0MTM2ZmM4YTMyMzNkODYxZSIsImZpZG5vdWEiOiJiYThlZTVmNmRjZGE3MjU2NDk4ZjQ2NDNjZmFhNGIxYSJ9",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_gcl_au",
+    "value": "1.1.381668316.1748875905",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_fbp",
+    "value": "fb.1.1748875905765.114878242628513651",
     "path": "/",
     "httpOnly": false,
     "secure": false
