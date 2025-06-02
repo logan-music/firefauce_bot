@@ -1,66 +1,82 @@
 [
   {
     "domain": "firefaucet.win",
-    "name": "session",
-    "value": "01b7ff54-d81d-4f4e-95e5-c2e5ea3264d6.mmmwPbDuHhe74bRZ2FDcSFjfKyY",
+    "name": "referrer",
+    "value": "https://www.google.com/",
     "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "domain": "firefaucet.win",
+    "name": "session",
+    "value": "835da46e-d7cf-4b53-9dc4-9e75ca170fd4.2NbCHxtLckVq9MWrKBUh2H6YB1o",
+    "path": "/",
+    "secure": false,
     "httpOnly": true,
-    "secure": false
+    "expirationDate": 1749456948.863891
   },
   {
     "domain": ".firefaucet.win",
     "name": "_gid",
-    "value": "GA1.2.446633399.1748875904",
+    "value": "GA1.2.790224089.1748851916",
     "path": "/",
+    "secure": false,
     "httpOnly": false,
-    "secure": false
-  },
-  {
-    "domain": ".firefaucet.win",
-    "name": "_gat_gtag_UA_113361696_1",
-    "value": "1",
-    "path": "/",
-    "httpOnly": false,
-    "secure": false
-  },
-  {
-    "domain": ".firefaucet.win",
-    "name": "_ga_62J3KC448K",
-    "value": "GS2.1.s1748875811$o3$g1$t1748875904$j29$l0$h0",
-    "path": "/",
-    "httpOnly": false,
-    "secure": false
-  },
-  {
-    "domain": ".firefaucet.win",
-    "name": "_ga",
-    "value": "GA1.1.348722677.1748875904",
-    "path": "/",
-    "httpOnly": false,
-    "secure": false
+    "expirationDate": 1748938550
   },
   {
     "domain": "firefaucet.win",
     "name": "bitmedia_fid",
     "value": "eyJmaWQiOiJkODA0YzM5NWI0YTViYmY0MTM2ZmM4YTMyMzNkODYxZSIsImZpZG5vdWEiOiJiYThlZTVmNmRjZGE3MjU2NDk4ZjQ2NDNjZmFhNGIxYSJ9",
     "path": "/",
+    "secure": false,
     "httpOnly": false,
-    "secure": false
-  },
-  {
-    "domain": ".firefaucet.win",
-    "name": "_gcl_au",
-    "value": "1.1.381668316.1748875905",
-    "path": "/",
-    "httpOnly": false,
-    "secure": false
+    "expirationDate": 1783411916.610399
   },
   {
     "domain": ".firefaucet.win",
     "name": "_fbp",
-    "value": "fb.1.1748875905765.114878242628513651",
+    "value": "fb.1.1748851917175.792929491782320131",
     "path": "/",
+    "secure": false,
     "httpOnly": false,
-    "secure": false
+    "expirationDate": 1756628151
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_gcl_au",
+    "value": "1.1.195549952.1748851918",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "expirationDate": 1756627918
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_gat_gtag_UA_113361696_1",
+    "value": "1",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "expirationDate": 1748852173
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_ga_62J3KC448K",
+    "value": "GS2.1.s1748851916$o1$g1$t1748852150$j21$l0$h0",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "expirationDate": 1783412150.201821
+  },
+  {
+    "domain": ".firefaucet.win",
+    "name": "_ga",
+    "value": "GA1.2.701474883.1748851916",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false,
+    "expirationDate": 1783412150.269986
   }
 ]
