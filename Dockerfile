@@ -1,8 +1,9 @@
 FROM node:18-slim
 
-# Install Chromium dependencies
+# Install Chromium dependencies + Tesseract + fonts
 RUN apt-get update && apt-get install -y \
     chromium \
+    tesseract-ocr \
     fonts-liberation \
     libatk-bridge2.0-0 \
     libgtk-3-0 \
@@ -19,13 +20,16 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 # Set working dir
 WORKDIR /app
 
-# Copy source files
-COPY package.json .
+# Copy all source files
+COPY package*.json ./
 COPY bypass-ptc.js .
 COPY cookies.json .
 
-# Install dependencies
+# Install npm dependencies (include puppeteer-extra, stealth, tesseract.js)
 RUN npm install
+
+# Dummy server port env (Render expects this)
+ENV PORT=3000
 
 # Start the bot
 CMD ["node", "bypass-ptc.js"]
