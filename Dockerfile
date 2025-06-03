@@ -1,6 +1,7 @@
+# Base image with all needed dependencies for Puppeteer
 FROM node:18-slim
 
-# Install Chromium dependencies + Tesseract + fonts
+# Install Chromium dependencies
 RUN apt-get update && apt-get install -y \
     chromium \
     tesseract-ocr \
@@ -17,19 +18,22 @@ RUN apt-get update && apt-get install -y \
 # Set Puppeteer to use system Chromium
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
-# Set working dir
+# Avoid sandbox errors in Render & Railway
+ENV PUPPETEER_DISABLE_SANDBOX=true
+
+# Set working directory
 WORKDIR /app
 
-# Copy all source files
+# Copy package files and install deps
 COPY package*.json ./
-COPY bypass-ptc.js .
-COPY cookies.json .
-
-# Install npm dependencies (include puppeteer-extra, stealth, tesseract.js)
 RUN npm install
 
-# Dummy server port env (Render expects this)
+# Copy source files
+COPY index.js .
+COPY cookies.json .
+
+# Dummy port for platform compatibility
 ENV PORT=3000
 
 # Start the bot
-CMD ["node", "bypass-ptc.js"]
+CMD ["node", "index.js"]
