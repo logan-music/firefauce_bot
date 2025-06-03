@@ -37,4 +37,4 @@ COPY . .
 RUN npm install
 
 # Run app
-CMD ["node", "index.js"]
+CMD ["node", "bypass-ptc.js"]
