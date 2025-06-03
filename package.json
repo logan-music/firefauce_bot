@@ -1,26 +1,18 @@
 {
-  "name": "firefaucet-bot",
+  "name": "betpawa-bot",
   "version": "1.0.0",
-  "description": "FireFaucet PTC bypass bot using Puppeteer Extra and Tesseract with stealth mode",
-  "main": "bypass-ptc.js",
+  "description": "Automated betting bot for BetPawa using Puppeteer and stealth mode",
+  "main": "index.js",
   "scripts": {
-    "start": "node bypass-ptc.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "puppeteer": "^21.11.0",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-stealth": "^2.11.1",
-    "tesseract.js": "^4.1.1"
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12"
   },
-  "keywords": [
-    "puppeteer",
-    "stealth",
-    "tesseract",
-    "firefaucet",
-    "bot",
-    "bypass",
-    "ptc"
-  ],
   "author": "Logan",
   "license": "MIT"
 }
