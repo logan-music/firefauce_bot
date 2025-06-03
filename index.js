@@ -3,9 +3,11 @@ const cookiesRaw = require("./cookies.json");
 
 (async () => {
   const browser = await puppeteer.launch({
-  headless: "new", // au true
-  args: ['--no-sandbox', '--disable-setuid-sandbox']
-});
+    headless: "new",
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  const page = await browser.newPage();
 
   const cookies = Array.isArray(cookiesRaw) ? cookiesRaw : cookiesRaw.cookies;
 
@@ -17,7 +19,7 @@ const cookiesRaw = require("./cookies.json");
 
   await page.goto("https://www.betpawa.co.tz", { waitUntil: "networkidle2" });
 
-  // Check if login succeeded (e.g., look for user's balance or logout button)
+  // Check if login succeeded
   const loggedIn = await page.evaluate(() => {
     return !!document.querySelector("[data-test-id='header-balance']");
   });
