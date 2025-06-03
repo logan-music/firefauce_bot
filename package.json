@@ -1,0 +1,13 @@
+{
+  "name": "firefaucet-bot",
+  "version": "1.0.0",
+  "description": "FireFaucet PTC auto bypass bot",
+  "main": "bypass-ptc.js",
+  "scripts": {
+    "start": "node bypass-ptc.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.3.8",
+    "tesseract.js": "^4.1.1"
+  }
+}
