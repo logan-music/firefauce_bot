@@ -1,0 +1,95 @@
+{
+  "url": "https://www.betpawa.co.tz",
+  "cookies": [
+    {
+      "domain": ".betpawa.co.tz",
+      "expirationDate": 1755725815,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_gcl_au",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "1.1.1930195076.1747949816"
+    },
+    {
+      "domain": ".betpawa.co.tz",
+      "expirationDate": 1782509817.979857,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ga",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "GA1.1.1684171227.1747949818"
+    },
+    {
+      "domain": "www.betpawa.co.tz",
+      "expirationDate": 1750541842.877862,
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "x-pawa-token",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "c8206c6dd1f6cdca-9002f4b3ba54fbbf"
+    },
+    {
+      "domain": ".www.betpawa.co.tz",
+      "expirationDate": 1750541842.877862,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "x-pawa-token",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "c8206c6dd1f6cdca-9002f4b3ba54fbbf"
+    },
+    {
+      "domain": ".www.betpawa.co.tz",
+      "expirationDate": 1748960956.205523,
+      "hostOnly": false,
+      "httpOnly": true,
+      "name": "__cf_bm",
+      "path": "/",
+      "sameSite": "no_restriction",
+      "secure": true,
+      "session": false,
+      "storeId": "0",
+      "value": "aMCYGqQZR4yOx6t18Dke43DrysunLUF3EA93peg1f90-1748959156-1.0.1.1-hkXmifMdQKywtw0wv0.s_e03K3oBBIQnCwsn.TW82cB07eX_YSqnG_6.lFwD916dVLty_abnt.uHpXtYqIE4317QFAZrpoNb8LBqgYEfdHQ"
+    },
+    {
+      "domain": "www.betpawa.co.tz",
+      "hostOnly": true,
+      "httpOnly": false,
+      "name": "tracingId",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": true,
+      "storeId": "0",
+      "value": "062f5182-3954-4302-8bb2-17f00b8c47b2"
+    },
+    {
+      "domain": ".betpawa.co.tz",
+      "expirationDate": 1783519223.138106,
+      "hostOnly": false,
+      "httpOnly": false,
+      "name": "_ga_81NDDTKQDC",
+      "path": "/",
+      "sameSite": "unspecified",
+      "secure": false,
+      "session": false,
+      "storeId": "0",
+      "value": "GS2.1.s1748959171$o3$g1$t1748959223$j8$l0$h0"
+    }
+  ]
+}
