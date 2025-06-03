@@ -1,4 +1,3 @@
-# Use official Node.js image
 FROM node:18-slim
 
 # Set working directory
@@ -23,15 +22,19 @@ RUN apt-get update && apt-get install -y \
     libxdamage1 \
     libxrandr2 \
     xdg-utils \
+    libdrm2 \
+    libxshmfence1 \
+    libgbm1 \
+    libgtk-3-0 \
     --no-install-recommends && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy files
+# Copy project files
 COPY . .
 
-# Install Node.js dependencies
+# Install Node dependencies
 RUN npm install
 
-# Start script
+# Run app
 CMD ["node", "index.js"]
