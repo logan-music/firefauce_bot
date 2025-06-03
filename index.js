@@ -2,8 +2,10 @@ const puppeteer = require("puppeteer");
 const cookiesRaw = require("./cookies.json");
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: "new" });
-  const page = await browser.newPage();
+  const browser = await puppeteer.launch({
+  headless: "new", // au true
+  args: ['--no-sandbox', '--disable-setuid-sandbox']
+});
 
   const cookies = Array.isArray(cookiesRaw) ? cookiesRaw : cookiesRaw.cookies;
 
