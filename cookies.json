@@ -1,41 +1,84 @@
 [
   {
-    "domain": ".www.betpawa.co.tz",
-    "expirationDate": 1748980954.14582,
-    "hostOnly": false,
+    "name": "referrer",
+    "value": "https://www.google.com/",
+    "domain": "firefaucet.win",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "session",
+    "value": "b9164c8b-13a8-432f-bd2e-4f6cb21a701c.9SRfPHNnQavCVpMWato3tMtxC98",
+    "domain": "firefaucet.win",
+    "path": "/",
+    "expires": 1749592143.031612,
     "httpOnly": true,
-    "name": "__cf_bm",
-    "path": "/",
-    "sameSite": "no_restriction",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "jx_frp4XpfShJd0z6YS2VhYc5XX3xdCQevB466Do2P0-1748979154-1.0.1.1-oXiLi3KYvIBJ7PmyaZ7LQpAdgtc.Yxscv5dswEQxhbtX3WkQU8vbf8kmHk4CaLuRENt.uwA5xv7yCopdJ_RGG7pbPTRHjXGqvmoyXyVHBQQ"
+    "secure": false
   },
   {
-    "domain": "www.betpawa.co.tz",
-    "expirationDate": 1748997180.7186,
-    "hostOnly": true,
-    "httpOnly": false,
-    "name": "x-pawa-user-uuid",
+    "name": "_gid",
+    "value": "GA1.2.1303471747.1748987315",
+    "domain": ".firefaucet.win",
     "path": "/",
-    "sameSite": "unspecified",
-    "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "c6450e93-bde6-4414-ac9e-339fb89abe7a"
+    "expires": 1749073743,
+    "httpOnly": false,
+    "secure": false
   },
   {
-    "domain": "www.betpawa.co.tz",
-    "expirationDate": 1751571180.719979,
-    "hostOnly": true,
-    "httpOnly": false,
-    "name": "x-pawa-token",
+    "name": "_gat_gtag_UA_113361696_1",
+    "value": "1",
+    "domain": ".firefaucet.win",
     "path": "/",
-    "sameSite": "unspecified",
+    "expires": 1748987374,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "bitmedia_fid",
+    "value": "eyJmaWQiOiJkODA0YzM5NWI0YTViYmY0MTM2ZmM4YTMyMzNkODYxZSIsImZpZG5vdWEiOiJiYThlZTVmNmRjZGE3MjU2NDk4ZjQ2NDNjZmFhNGIxYSJ9",
+    "domain": "firefaucet.win",
+    "path": "/",
+    "expires": 1783547315.043009,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1748987315841.833767579344949643",
+    "domain": ".firefaucet.win",
+    "path": "/",
+    "expires": 1756763345,
+    "httpOnly": false,
     "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "c8206c6dd1f6cdca-d3ce43f9557e4143"
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1630885878.1748987316",
+    "domain": ".firefaucet.win",
+    "path": "/",
+    "expires": 1756763316,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_ga_62J3KC448K",
+    "value": "GS2.1.s1748987314$o1$g1$t1748987343$j31$l0$h0",
+    "domain": ".firefaucet.win",
+    "path": "/",
+    "expires": 1783547343.660443,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.179994105.1748987315",
+    "domain": ".firefaucet.win",
+    "path": "/",
+    "expires": 1783547343.665883,
+    "httpOnly": false,
+    "secure": false
   }
 ]
