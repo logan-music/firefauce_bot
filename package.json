@@ -1,13 +1,14 @@
 {
-  "name": "firefaucet-bot",
+  "name": "firefaucet-stealth-bot",
   "version": "1.0.0",
-  "description": "FireFaucet PTC auto bypass bot",
-  "main": "bypass-ptc.js",
+  "description": "FireFaucet Stealth PTC Bot",
+  "main": "bypass-ptc-stealth.js",
   "scripts": {
-    "start": "node bypass-ptc.js"
+    "start": "node bypass-ptc-stealth.js"
   },
   "dependencies": {
-    "puppeteer": "^22.8.2",
+    "puppeteer-extra": "^4.2.1",
+    "puppeteer-extra-plugin-stealth": "^2.11.1",
     "tesseract.js": "^4.1.1"
   }
 }
